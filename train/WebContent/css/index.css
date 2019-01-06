@@ -1,0 +1,180 @@
+﻿.slider {
+      height: 340px;
+      width: 680px;
+      position: relative;
+    }
+    
+    .slider li {
+      position: absolute;
+      left:0;	
+    }
+	.slider li img{
+		width:680px;
+		height:340px;
+	}
+    .slider li:first-child {
+      display: block;
+    }
+    
+    li{
+    	list-style: none;
+    }
+    .arrow {
+      display: none;
+    }
+    
+    .slider:hover .arrow {
+      display: block;
+    }
+    
+    .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .arrow-left {
+      left: 0;
+    }
+    
+    .arrow-right {
+      right: 0;
+    }
+    .nows_con{
+  padding-left: 81px;
+  padding-top: 28px;
+  height: 308px;
+  overflow: hidden;
+}
+.nows_con h2{
+  font-size: 24px;
+  color: #222;
+  padding-bottom: 6px;
+  padding-left:35px;
+}
+.nows_con h2 span{
+  font-size: 14px;
+  color: #999;
+  padding-left: 10px;
+}
+.nows_con h2 a{
+  font-size: 14px;
+    font-style: inherit;
+    float: right;
+    padding: 8px 52px 0 0;
+    color: #666;
+}
+.nows_con ul{
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+.nows_con li{
+  width: 91%;
+  line-height: 33px;
+}
+.nows_con li:hover{
+  background: #eee;
+}
+.nows_con li b{
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 9px 6px 0 5px;
+  background: #a7a7a7;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  font-weight: 400;
+}
+.nows_con li p{
+  float: left;
+  width: 91%;
+  font-size: 15px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nows_con li.red b{
+  background: #d50212;
+}
+.nows_con img{
+  margin-top: 10px;
+}
+.nows_con{
+	padding-left: 81px;
+	padding-top: 28px;
+	height: 308px;
+	overflow: hidden;
+}
+.nows_con h2{
+	font-size: 24px;
+	color: #222;
+	padding-bottom: 6px;
+}
+.nows_con h2 span{
+	font-size: 14px;
+	color: #999;
+	padding-left: 10px;
+}
+.nows_con h2 a{
+	font-size: 14px;
+    font-style: inherit;
+    float: right;
+    padding: 8px 52px 0 0;
+    color: #666;
+}
+.nows_con ul{
+	margin-top: 10px;
+	margin-bottom: 36px;
+}
+.nows_con li{
+	width: 80%;
+	line-height: 33px;
+}
+.nows_con li:hover{
+	background: #eee;
+}
+.nows_con li b{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 9px 6px 0 5px;
+	background: #a7a7a7;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 16px;
+	font-weight: 400;
+}
+.nows_con li p{
+	float: left;
+	width: 80%;
+	font-size: 15px;
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.nows_con li.red b{
+	background: #d50212;
+}
+.nows_con img{
+	margin-top: 10px;
+}
