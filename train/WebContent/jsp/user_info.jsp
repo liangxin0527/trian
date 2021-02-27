@@ -32,6 +32,9 @@
 				</div>
 			</div>
 			<div class="row" style="height:200px;"></div>
+			<div class="row">
+				<img style="width: 1170px;" src="${pageContext.request.contextPath}/img/foot.png"/>
+			</div>
 		</div>
 		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-dialog">
@@ -87,9 +90,7 @@
 		        </div>
 		    </div>
 		</div>
-	<div class="row">
-		<img src="${pageContext.request.contextPath}/img/foot.png"/>
-	</div>
+
   	</body>
  	
 	<script id="tpl1" type="text/x-handlebars-template">

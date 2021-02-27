@@ -27,7 +27,7 @@
 			<div class="col-lg-4"></div>
 		</div>
 		 <div class="row">
-		 	<img src="${pageContext.request.contextPath}/img/foot.png"/>
+		 	<img style="width: 1170px;" src="${pageContext.request.contextPath}/img/foot.png"/>
 		 </div>
 	</div>
 	

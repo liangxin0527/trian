@@ -101,7 +101,7 @@
                  last: "尾页",
                  prev:"上一页",
                  next:"下一页",
-                 visiablePages : 3,
+                 visiablePages : 2,
                  initiateStartPageClick: false,
                  onPageClick: function (e, page) {
                    loadData(page);

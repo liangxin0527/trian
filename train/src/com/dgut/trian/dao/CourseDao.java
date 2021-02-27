@@ -62,7 +62,7 @@ public class CourseDao {
 	}
 	public void edit(Course course) throws SQLException {
 		QueryRunner qr=new QueryRunner(DataSourceUtils.getDataSource());
-		String sql="UPDATE t_course SET name=?,brief=?,category_name=?,price=?,picture=?,weight=? WHERE id=57;";
+		String sql="UPDATE t_course SET name=?,brief=?,category_name=?,price=?,picture=?,weight=? WHERE id=?;";
 		qr.update(sql,course.getName()+"",course.getBrief()+"",course.getCategory_name()+"",course.getPrice(),course.getPicture()+"",course.getWeight(),course.getId());
 	}
 	

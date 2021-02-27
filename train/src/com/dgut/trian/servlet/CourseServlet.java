@@ -69,7 +69,10 @@ public class CourseServlet extends HttpServlet {
 						String realName = UploadUtils.getRealName(name);
 						String uuidName = UploadUtils.getUUIDName(realName);
 						String path = this.getServletContext().getRealPath("/courseimages");
-						
+						File dir = new File(path);
+						if (!dir.exists()) {
+							dir.mkdirs();
+						}
 						InputStream is = fi.getInputStream();
 						FileOutputStream os = new FileOutputStream(new File(path, uuidName));
 						
@@ -88,7 +91,8 @@ public class CourseServlet extends HttpServlet {
 				Course course = new Course();
 				BeanUtils.populate(course,map);
 				courseService.edit(course);
-				request.getRequestDispatcher("/CourseServlet?type=findAll").forward(request, response);
+				request.getRequestDispatcher("/admin/course/list.jsp").forward(request, response);
+				//request.getRequestDispatcher("/CourseServlet?type=findAll").forward(request, response);
 			}
 			else if(type.equals("add")) {
 				HashMap<String, Object> map = new HashMap<>();
@@ -105,7 +109,10 @@ public class CourseServlet extends HttpServlet {
 						String realName = UploadUtils.getRealName(name);
 						String uuidName = UploadUtils.getUUIDName(realName);
 						String path = this.getServletContext().getRealPath("/courseimages");
-						
+						File dir = new File(path);
+						if (!dir.exists()) {
+							dir.mkdirs();
+						}
 						InputStream is = fi.getInputStream();
 						FileOutputStream os = new FileOutputStream(new File(path, uuidName));
 						
@@ -250,7 +257,10 @@ public class CourseServlet extends HttpServlet {
 						String realName = UploadUtils.getRealName(name);
 						String uuidName = UploadUtils.getUUIDName(realName);
 						String path = this.getServletContext().getRealPath("/courseimages");
-						
+						File dir = new File(path);
+						if (!dir.exists()) {
+							dir.mkdirs();
+						}
 						InputStream is = fi.getInputStream();
 						FileOutputStream os = new FileOutputStream(new File(path, uuidName));
 						

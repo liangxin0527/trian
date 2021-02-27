@@ -17,7 +17,7 @@
 			 <ul class="pagination pagination-sm pull-right"></ul>
 	    </div>
 		<div class="row">
-		 	<img src="${pageContext.request.contextPath}/img/foot.png"/>
+		 	<img style="width: 1170px;" src="${pageContext.request.contextPath}/img/foot.png"/>
 		</div>
 	</div>
 	<script id="tpl" type="text/x-handlebars-template"> 
@@ -25,7 +25,7 @@
 	<a href="${pageContext.request.contextPath}/jsp/course_info.jsp?id={{id}}">
 	<div class="col-lg-3  col-md-4 col-sm-6 info"  style="cursor:pointer;">
 		    <div class="thumbnail" style="height:240px">
-		      <img height="135" width="240" src="${pageContext.request.contextPath}/{{picture}}">
+		      <img height="135" width="240" style="height: 150px;" src="${pageContext.request.contextPath}/{{picture}}">
 		      <div class="caption">
 		        <h3 style="font-size: 16px;color: #07111B;line-height: 4px;" >{{name}}</h3>
 		        <p sytle="font-size: 12px;color: #4D555D;line-height: 20px;">￥{{price}}</p>

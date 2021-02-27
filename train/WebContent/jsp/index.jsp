@@ -15,56 +15,55 @@
 		<div class="row">
 			<div class="col-lg-7  col-md-6 col-sm-4">
 				<div class="slider">
-				  <ul>
-				    <li><a href="#"><img src="${pageContext.request.contextPath}/img/11.jpg" alt=""></a></li>
-				    <li><a href="#"><img src="${pageContext.request.contextPath}/img/12.jpg" alt=""></a></li>
-				    <li><a href="#"><img src="${pageContext.request.contextPath}/img/13.jpg" alt=""></a></li>
-				  </ul>
-				  <!--箭头-->
-				  <div class="arrow">
-				    <span class="arrow-left">&lt;</span>
-				    <span class="arrow-right">&gt;</span>
-				  </div>
+					<ul>
+						<li><a href="#"><img src="${pageContext.request.contextPath}/img/11.jpg" alt=""></a></li>
+						<li><a href="#"><img src="${pageContext.request.contextPath}/img/12.jpg" alt=""></a></li>
+						<li><a href="#"><img src="${pageContext.request.contextPath}/img/13.jpg" alt=""></a></li>
+					</ul>
+				    <!--箭头-->
+					<div class="arrow">
+						<span class="arrow-left">&lt;</span>
+						<span class="arrow-right">&gt;</span>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-5">
-				
-					<div class="knowcon_right innr">
-						<div class="nows_con">
-	<h2>最新动态<span>ITCAST</span><a href="http://www.itcast.cn/newsvideo/newslist.html" rel="nofollow" target="_blank">查看更多&gt;&gt;</a></h2>
-	<ul id="news">
-	</ul>
-</div>
-</div>
+				<div class="knowcon_right innr">
+					<div class="nows_con">
+						<h2>最新动态<span>ITCAST</span><a href="http://www.itcast.cn/newsvideo/newslist.html" rel="nofollow" target="_blank">查看更多&gt;&gt;</a></h2>
+						<ul id="news">
+						</ul>
+					</div>
+				</div>
 			</div>
-	   </div>
-		 <div class="row">
-		 	<img src="${pageContext.request.contextPath}/img/shizhan.png"/>
-		 </div>
+	   	</div>
+		<div class="row">
+			<img src="${pageContext.request.contextPath}/img/shizhan.png"/>
+		</div>
 		 
-		  <div class="row" id="weight">
+		<div class="row" id="weight">
 
-		  </div>
-		  <div class="row">
-		 	<img src="${pageContext.request.contextPath}/img/xinshang.png"/>
-		 </div>
-		 <div class="row" id="new">
-		  </div>
-		   <div class="row">
-		 	<img src="${pageContext.request.contextPath}/img/foot.png"/>
-		 </div>
+		</div>
+		<div class="row">
+			<img style="width: 1170px;" src="${pageContext.request.contextPath}/img/xinshang.png"/>
+		</div>
+		<div class="row" id="new">
+		</div>
+		<div class="row">
+			<img style="width: 1170px;" src="${pageContext.request.contextPath}/img/foot.png"/>
+		</div>
 	</div>
 	<script id="tpl" type="text/x-handlebars-template"> 
 	{{#each this}}
 	<a href="${pageContext.request.contextPath}/jsp/course_info.jsp?id={{id}}">
 	<div class="col-lg-3  col-md-4 col-sm-6 info"  style="cursor:pointer;">
-		    <div class="thumbnail" style="height:240px">
-		      <img height="135" width="240" src="${pageContext.request.contextPath}/{{picture}}">
-		      <div class="caption">
-		        <h3 style="font-size: 16px;color: #07111B;line-height: 4px;" >{{name}}</h3>
-		        <p sytle="font-size: 12px;color: #4D555D;line-height: 20px;">￥{{price}}</p>
-		      </div>
- 			</div>	
+		<div class="thumbnail" style="height:240px">
+			<img height="135" width="240" style="height: 150px;" src="${pageContext.request.contextPath}/{{picture}}">
+			<div class="caption">
+				<h3 style="font-size: 16px;color: #07111B;line-height: 4px;" >{{name}}</h3>
+				<p sytle="font-size: 12px;color: #4D555D;line-height: 20px;">￥{{price}}</p>
+			</div>
+		</div>
 	</div>
 	{{/each}}
 	</script>

@@ -10,12 +10,20 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/handlebars-v4.0.12.js"></script>
 	<script src="${pageContext.request.contextPath}/js/dialog/layer.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/login.js"></script>
+	<style type="text/css">
+		#course,#select {
+			margin: 0;
+		}
+		.row {
+
+		}
+	</style>
 </head>
 <body>
 	
 	<jsp:include page="/jsp/top.jsp"></jsp:include>
 	<div class="container-fluid">
-		<div id="course" class="row" style="width: 100%;height: 475px;background:url(${pageContext.request.contextPath}/img/info.jpg) no-repeat -190px 5px;text-align: center;">
+		<div id="course" class="row" style="width: 100%;height: 475px;background:url(${pageContext.request.contextPath}/img/info.jpg) no-repeat;text-align: center;">
 
 		</div>
 		<div id="select" class="row" >
@@ -23,8 +31,8 @@
 			</div> -->
 		</div>
 	</div>
-	<div class="row">
-		<img src="${pageContext.request.contextPath}/img/foot.png"/>
+	<div class="row1">
+		<img style="width: 100%" src="${pageContext.request.contextPath}/img/foot.png"/>
 	</div>
 	<script id="tpl1" type="text/x-handlebars-template">
 		{{#each this}}
