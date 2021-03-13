@@ -76,12 +76,10 @@ public class SelectServlet extends HttpServlet {
 			}else if(type.equals("findAllByPage")) {
 				List<Object> select=new ArrayList<Object>();
 				int currPage=Integer.parseInt(request.getParameter("currPage"));
-				int pageSize=1;
-				int totalpage=(int)selectService.getTotalPage(pageSize);
-				if(currPage>totalpage)
-					currPage=totalpage;
+				int pageSize=10;
+				int totalpage=(int)selectService.getTotalPage(10);
 				List<Select> selects=new ArrayList<Select>();
-				selects=selectService.findAllByPage(currPage,pageSize);
+				selects=selectService.findAllByPage(currPage,10);
 				select.add(selects);
 				select.add(totalpage);
 				String json=JsonUtil.listjson(select);

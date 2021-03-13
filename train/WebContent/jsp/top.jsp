@@ -33,10 +33,10 @@
 </head>
 <body>
 <nav class="navbar navbar-default">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">
-		        <img width=40px height=40px alt="Brand" src="${pageContext.request.contextPath}/img/logo.png">
+		  <div class="container" align="top">
+		    <div class="navbar-header" align="top">
+		      <a class="navbar-brand"  href="https://www.heuet.edu.cn/"  >
+		        <img width=60px height=50px alt="河北经贸大学"  align="top" src="${pageContext.request.contextPath}/img/logo.png">
 		      </a>
 		    </div>
 		    <ul id="menuId" class="nav navbar-nav">

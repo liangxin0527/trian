@@ -84,7 +84,6 @@
 
           $pagination.twbsPagination('destroy');
           $pagination.twbsPagination({
-
                  startPage: page,
                  totalPages: data[1],
                  first:"首页",

@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.el.lang.ELArithmetic;
 
 import com.dgut.trian.bean.News;
 import com.dgut.trian.dao.NewsDao;
